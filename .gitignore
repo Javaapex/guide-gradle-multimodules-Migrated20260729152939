@@ -1,0 +1,10 @@
+.gradle/
+.classpath
+.project
+.settings
+.factorypath
+bin/
+build
+*.DS_STORE
+.idea
+*/build/

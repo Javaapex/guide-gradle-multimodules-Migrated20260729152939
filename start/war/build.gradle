@@ -1,0 +1,13 @@
+apply plugin: 'war'
+
+description = 'WAR Module'
+
+dependencies {
+    compileOnly 'jakarta.platform:jakarta.jakartaee-api:10.0.0'
+    compileOnly 'org.eclipse.microprofile:microprofile:7.1'
+}
+
+war {
+    archiveFileName = rootProject.name + '-' + getArchiveBaseName().get() + '-' +
+                      rootProject.version + '.' + getArchiveExtension().get()
+}

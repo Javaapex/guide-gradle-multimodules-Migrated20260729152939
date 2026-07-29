@@ -1,0 +1,15 @@
+description = 'EAR Module'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+            name = 'Sonatype Nexus Snapshots'
+            url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+    }
+    dependencies {
+        classpath 'io.openliberty.tools:liberty-gradle-plugin:3.9.5'
+    }
+}
